@@ -1,0 +1,16 @@
+<h2>Dashboard</h2>
+<div class="columns">
+    <div class="col-5">
+        <p>
+            Press the button to update the dashboard:
+            <br>
+            <br>
+            <button class="btn btn-lg btn-primary centered" (click)="togglImage()">Toggl update</button>
+        </p>
+    </div>
+    <div class="col-7">
+        <img class="img-responsive rounded" width="300" src="http://m.memegen.com/3c32q9.jpg" alt="update" [style.display]="isUpdateVisible ? 'block':'none'">
+    </div>
+</div>
+
+

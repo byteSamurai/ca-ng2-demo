@@ -1,0 +1,28 @@
+<h2>Internet Chuck Norris DB</h2>
+<div class="columns">
+	<div class="col-5">
+		<div class="form-group col-11">
+			<label class="form-label" for="amount">Anzahl Witze</label>
+			<input class="form-input" type="number" min="1" max="10" id="amount"
+				   [(ngModel)]="amount" />
+		</div>
+		<!--<div class="form-group">-->
+			<!--<label class="form-checkbox">-->
+            	<!--<input type="checkbox">-->
+        	 	<!--<i class="form-icon"></i> continues mode-->
+            <!--</label>-->
+		<!--</div>-->
+		<button class="btn btn-lg btn-primary text-right" (click)="getJokes()">Get random joke</button>
+	</div>
+	<div class="col-7">
+        <div class="card" *ngFor="let j of jokes">
+            <div class="card-header">
+                <h4 class="card-title">No. {{j.id}}</h4>
+                <h6 class="card-meta">from ICNDB.com</h6>
+            </div>
+            <div class="card-body">
+                {{j.joke}}
+            </div>
+        </div>
+	</div>
+</div>

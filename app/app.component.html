@@ -1,0 +1,18 @@
+<header>
+    <nav class="columns">
+        <ul class="tab col-7">
+            <li class="tab-item" routerLinkActive="active">
+                <a routerLink="/dashboard">Dashboard</a>
+            </li>
+            <li class="tab-item" routerLinkActive="active">
+                <a routerLink="/icndb">ICNDB</a>
+            </li>
+        </ul>
+        <h6 class="col-4 text-bold text-right">{{ title }}</h6>
+    </nav>
+</header>
+<section>
+    <router-outlet></router-outlet>
+</section>
+
+

@@ -1,0 +1,11 @@
+{
+    "typescript.check.workspaceVersion": false,
+    "files.exclude": {
+        "node_modules":true,
+        "**/.git": true,
+        "**/*.js.map": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    }
+}
